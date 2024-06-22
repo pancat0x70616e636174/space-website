@@ -4,22 +4,76 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./reset.css" />
     <title>Design System</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
+      .bellefair-regular {
+        font-family: 'Bellefair', serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .flex-container {
+        
+      }
+    </style>
   </head>
-  <body class="background-dark">
-    <!-- CHALLENGE ----------------
-             1. Give the first div a light blue background and dark text color
-             2. Give the second div a white background and dark text color
-             3. Give the third div a light blue background with a 20% alpha value and white text
-        --------------------------- -->
-    <div class="container">
-      <h1>Design system</h1>
+  <body class="background-dark text-white">
+    <!-- <div class="container">
+      <h1 class="text-white">Design system</h1>
 
-      <div style="padding: 1rem">light blue bg, with dark text</div>
+      <div class="background-accent text-dark" style="padding: 1rem">
+        light blue bg, with dark text
+      </div>
 
-      <div class="" style="padding: 1rem">white bg, with dark text</div>
+      <div class="background-white text-dark" style="padding: 1rem">white bg, with dark text</div>
 
-      <div class="" style="padding: 1rem">light blue bg with a 20% alpha and white text</div>
+      <div class="background-example text-white" style="padding: 1rem">
+        light blue bg with a 20% alpha and white text
+      </div>
+    </div> -->
+
+    <div class="container bellefair-regular">
+      <h1>Design System</h1>
+
+      <section id="colors">
+        <h2><span>01</span> colors</h2>
+
+        <div class="flex-container">
+          <div
+            class="background-dark text-white"
+            style="padding: 3rem 1rem 1rem; border: 1px solid var(--color-secondary-light)"
+          >
+            #0B0D17
+          </div>
+          <p><span class="text-accent">RGB</span> 11, 13, 23</p>
+          <p><span class="text-accent">HSL</span> 230°, 35%, 7%</p>
+        </div>
+
+        <div class="flex-container">
+          <div
+            class="background-accent text-dark"
+            style="padding: 3rem 1rem 1rem; border: 1px solid var(--color-secondary-light)"
+          >
+            #D0D6F9
+          </div>
+          <p><span class="text-accent">RGB</span> 11, 13, 23</p>
+          <p><span class="text-accent">HSL</span> 230°, 35%, 7%</p>
+        </div>
+
+        <div class="flex-container">
+          <div
+            class="background-white text-dark"
+            style="padding: 3rem 1rem 1rem; border: 1px solid var(--color-secondary-light)"
+          >
+            #FFFFFF
+          </div>
+          <p><span class="text-accent">RGB</span> 11, 13, 23</p>
+          <p><span class="text-accent">HSL</span> 230°, 35%, 7%</p>
+        </div>
+      </section>
     </div>
   </body>
 </html>
