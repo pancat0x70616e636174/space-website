@@ -1,40 +1,68 @@
 /* ------------------------ */
+/* CSS Custom Properties    */
+/* ------------------------ */
+:root {
+	--color-dark: 230 35% 7%;
+	--color-light: 231 77% 90%;
+	--color-white: 0 0% 100%;
+}
+
+
+/* ------------------------ */
 /* CSS Utility Classes      */
 /* ------------------------ */
 
+/* General */
 .flex {
-  display: flex;
-  gap: var(--gap, 1rem);
+	display: flex;
+	gap: var(--gap, 1rem);
 }
 
 .grid {
-  display: grid;
-  gap: var(--gap, 1rem);
+	display: grid;
+	gap: var(--gap, 1rem);
 }
 
 .container {
-  padding-inline: 2em;
-  margin-inline: auto;
-  max-width: 80rem;
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; Full viewport height to center vertically */
+	padding-inline: 2em;
+	margin-inline: auto;
+	max-width: 80rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	/* Full viewport height to center vertically */
 }
 
 .screen-reader-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap; /* added line */
-  border: 0;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	/* added line */
+	border: 0;
 }
 
 .box {
-  background: lightblue;
-  padding: 3rem;
+	background: lightblue;
+	padding: 3rem;
 }
+
+/* Background Colors */
+.background-dark {
+	background-color: hsl(var(--color-dark));
+}
+
+.background-accent {
+	background-color: hsl(var(--color-light));
+}
+
+.background-white {
+	background-color: hsl(var(--color-white));
+}
+
+/* Font Colors */
