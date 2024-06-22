@@ -15,63 +15,57 @@
         font-style: normal;
       }
 
-      .flex-container {
-        
+      .color-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+      }
+
+      .color-box {
+        flex: 1;
       }
     </style>
   </head>
   <body class="background-dark text-white">
-    <!-- <div class="container">
-      <h1 class="text-white">Design system</h1>
-
-      <div class="background-accent text-dark" style="padding: 1rem">
-        light blue bg, with dark text
-      </div>
-
-      <div class="background-white text-dark" style="padding: 1rem">white bg, with dark text</div>
-
-      <div class="background-example text-white" style="padding: 1rem">
-        light blue bg with a 20% alpha and white text
-      </div>
-    </div> -->
-
     <div class="container bellefair-regular">
       <h1>Design System</h1>
 
       <section id="colors">
         <h2><span>01</span> colors</h2>
 
-        <div class="flex-container">
-          <div
-            class="background-dark text-white"
-            style="padding: 3rem 1rem 1rem; border: 1px solid var(--color-secondary-light)"
-          >
-            #0B0D17
+        <div class="color-container">
+          <div class="color-box">
+            <div
+              class="background-dark text-white"
+              style="padding: 3rem 1rem 1rem; border: 1px solid var(--color-secondary-light)"
+            >
+              #0B0D17
+            </div>
+            <p><span class="text-accent">RGB</span> 11, 13, 23</p>
+            <p><span class="text-accent">HSL</span> 230°, 35%, 7%</p>
           </div>
-          <p><span class="text-accent">RGB</span> 11, 13, 23</p>
-          <p><span class="text-accent">HSL</span> 230°, 35%, 7%</p>
-        </div>
 
-        <div class="flex-container">
-          <div
-            class="background-accent text-dark"
-            style="padding: 3rem 1rem 1rem; border: 1px solid var(--color-secondary-light)"
-          >
-            #D0D6F9
+          <div class="color-box">
+            <div
+              class="background-accent text-dark"
+              style="padding: 3rem 1rem 1rem; border: 1px solid var(--color-secondary-light)"
+            >
+              #D0D6F9
+            </div>
+            <p><span class="text-accent">RGB</span> 208, 214, 249</p>
+            <p><span class="text-accent">HSL</span> 231°, 77%, 90%</p>
           </div>
-          <p><span class="text-accent">RGB</span> 11, 13, 23</p>
-          <p><span class="text-accent">HSL</span> 230°, 35%, 7%</p>
-        </div>
 
-        <div class="flex-container">
-          <div
-            class="background-white text-dark"
-            style="padding: 3rem 1rem 1rem; border: 1px solid var(--color-secondary-light)"
-          >
-            #FFFFFF
+          <div class="color-box">
+            <div
+              class="background-white text-dark"
+              style="padding: 3rem 1rem 1rem; border: 1px solid var(--color-secondary-light)"
+            >
+              #FFFFFF
+            </div>
+            <p><span class="text-accent">RGB</span> 255, 255, 255</p>
+            <p><span class="text-accent">HSL</span> 0°, 0%, 100%</p>
           </div>
-          <p><span class="text-accent">RGB</span> 11, 13, 23</p>
-          <p><span class="text-accent">HSL</span> 230°, 35%, 7%</p>
         </div>
       </section>
     </div>
