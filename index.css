@@ -1,16 +1,34 @@
-/* ------------------------ */
-/* CSS Custom Properties    */
-/* ------------------------ */
+/* ------------------------------ */
+/* Custom Properties              */
+/* ------------------------------ */
+
 :root {
+    /* Colors */
     --color-dark: 230 35% 7%;
     --color-light: 231 77% 90%;
     --color-secondary-light: #616476;
     --color-white: 0 0% 100%;
+
+    /* Font sizes */
+    /* Using REM instead of px values for accessibility purposes */
+    --font-size-900: 9.375rem;
+    --font-size-800: 6.25rem;
+    --font-size-700: 3.5rem;
+    --font-size-600: 2rem;
+    --font-size-500: 1.75rem;
+    --font-size-400: 1.125rem;
+    --font-size-300: 1rem;
+    --font-size-200: 0.875rem;
+
+    /* Font families */
+    --font-family-serif: "Bellefair", serif;
+    --font-family-normal: "Barlow", sans-serif;
+    --font-family-condensed: "Barlow Condensed", sans-serif;
 }
 
-/* ------------------------ */
-/* CSS Accessibility        */
-/* ------------------------ */
+/* ------------------------------ */
+/* Accessibility                  */
+/* ------------------------------ */
 
 /* Remove animations for people who've turned them off */
 @media (prefers-reduced-motion: reduce) {
@@ -25,9 +43,9 @@
     }
 }
 
-/* ------------------------ */
-/* CSS Utility Classes      */
-/* ------------------------ */
+/* ------------------------------ */
+/* General Utility Classes        */
+/* ------------------------------ */
 
 /* General */
 .flex {
@@ -93,4 +111,77 @@
 
 .text-white {
     color: hsl(var(--color-white));
+}
+
+/* ------------------------------ */
+/* Typography Utility Classes     */
+/* ------------------------------ */
+
+/* Font families */
+.font-family-serif {
+    font-family: var(--font-family-serif);
+}
+
+.font-family-normal {
+    font-family: var(--font-family-normal);
+}
+
+.font-family-condensed {
+    font-family: var(--font-family-condensed);
+}
+
+/* Letter spacing */
+.letter-spacing-1 {
+    letter-spacing: 4.75px;
+}
+
+.letter-spacing-2 {
+    letter-spacing: 2.7px;
+}
+
+.letter-spacing-3 {
+    letter-spacing: 2.35px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.font-size-900 {
+    font-size: var(--font-size-900);
+}
+
+.font-size-800 {
+    font-size: var(--font-size-800);
+}
+
+.font-size-700 {
+    font-size: var(--font-size-700);
+}
+
+.font-size-600 {
+    font-size: var(--font-size-600);
+}
+
+.font-size-500 {
+    font-size: var(--font-size-500);
+}
+
+.font-size-400 {
+    font-size: var(--font-size-400);
+}
+
+.font-size-300 {
+    font-size: var(--font-size-300);
+}
+
+.font-size-200 {
+    font-size: var(--font-size-200);
+}
+
+.font-size-900,
+.font-size-800,
+.font-size-700,
+.font-size-600 {
+    line-height: 1.1;
 }
