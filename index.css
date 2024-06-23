@@ -1,12 +1,11 @@
-/* ------------------------------ */
+/*--------------------------------*/
 /* Custom Properties              */
-/* ------------------------------ */
+/*--------------------------------*/
 
 :root {
     /* Colors */
     --color-dark: 230 35% 7%;
     --color-light: 231 77% 90%;
-    --color-secondary-light: #616476;
     --color-white: 0 0% 100%;
 
     /* Font sizes */
@@ -26,9 +25,9 @@
     --font-family-condensed: "Barlow Condensed", sans-serif;
 }
 
-/* ------------------------------ */
+/*--------------------------------*/
 /* Accessibility                  */
-/* ------------------------------ */
+/*--------------------------------*/
 
 /* Remove animations for people who've turned them off */
 @media (prefers-reduced-motion: reduce) {
@@ -43,9 +42,22 @@
     }
 }
 
-/* ------------------------------ */
+
+/*--------------------------------*/
+/* Global Properties              */
+/*--------------------------------*/
+
+body {
+    font-family: var(--font-family-normal);
+    font-size: var(--font-size-400);
+    color: hsl(var(--color-white));
+    background-color: hsl(var(--color-dark));
+}
+
+
+/*--------------------------------*/
 /* General Utility Classes        */
-/* ------------------------------ */
+/*--------------------------------*/
 
 /* General */
 .flex {
@@ -113,9 +125,9 @@
     color: hsl(var(--color-white));
 }
 
-/* ------------------------------ */
+/*--------------------------------*/
 /* Typography Utility Classes     */
-/* ------------------------------ */
+/*--------------------------------*/
 
 /* Font families */
 .font-family-serif {
