@@ -20,9 +20,9 @@
     --font-size-200: 0.875rem;
 
     /* Font families */
-    --font-family-serif: "Bellefair", serif;
-    --font-family-normal: "Barlow", sans-serif;
-    --font-family-condensed: "Barlow Condensed", sans-serif;
+    --font-family-serif: 'Bellefair', serif;
+    --font-family-normal: 'Barlow', sans-serif;
+    --font-family-condensed: 'Barlow Condensed', sans-serif;
 }
 
 /*--------------------------------*/
@@ -31,7 +31,6 @@
 
 /* Remove animations for people who've turned them off */
 @media (prefers-reduced-motion: reduce) {
-
     *,
     *::before,
     *::after {
@@ -53,7 +52,6 @@ body {
     background-color: hsl(var(--color-dark));
 }
 
-
 /*--------------------------------*/
 /* General Utility Classes        */
 /*--------------------------------*/
@@ -67,6 +65,12 @@ body {
 .grid {
     display: grid;
     gap: var(--gap, 1rem);
+}
+
+/* Select all direct child elements of elements with the flow class except the first child */
+.flow > *:where(:not(:first-child)) {
+    margin-top: var(--flow-space, 1rem);
+    outline: 1px solid red;
 }
 
 .container {
@@ -91,6 +95,19 @@ body {
 .box {
     background: lightblue;
     padding: 3rem;
+}
+
+.number-title {
+    font-family: var(--font-family-condensed);
+    font-size: var(--font-size-500);
+    text-transform: uppercase;
+    letter-spacing: 4.72px;
+}
+
+.number-title span {
+    margin-right: 0.5em;
+    font-weight: 700;
+    color: hsl(var(--color-white) / 0.25);
 }
 
 /* Background Colors */
