@@ -2,10 +2,12 @@
 /* Reset                    */
 /*--------------------------*/
 
-/* Reset box sizing */
+/* Reset box sizing and  */
 *,
 *::before,
 *::after {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -20,6 +22,7 @@ h4,
 h5,
 h6 {
     margin: 0;
+    padding: 0;
 }
 
 /* Reset font weight */
@@ -32,7 +35,6 @@ h6,
 p {
     font-weight: 400;
 }
-
 
 /* Reset body */
 body {
@@ -60,7 +62,6 @@ select {
 /* Reset animations */
 /* Remove animations for users that have turned them off and increase accessability */
 @media (prefers-reduced-motion: reduce) {
-
     *,
     *::before,
     *::after {
