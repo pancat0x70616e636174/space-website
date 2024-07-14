@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .parent {
+        position: relative;
+        z-index: 1; /* Creates a new stacking context */
+        background-color: lightblue;
+        padding: 50px;
+      }
+      .child1 {
+        position: absolute;
+        z-index: 2; /* Positioned within the parent's stacking context */
+        background-color: lightgreen;
+        width: 100px;
+        height: 100px;
+        top: 0;
+        left: 0;
+      }
+      .child2 {
+        position: absolute;
+        z-index: 1; /* Positioned within the parent's stacking context */
+        background-color: lightcoral;
+        width: 100px;
+        height: 100px;
+        top: 50px;
+        left: 50px;
+      }
+      .sibling {
+        position: relative;
+        z-index: 2; /* Creates a new stacking context, outside of the parent */
+        background-color: lightgoldenrodyellow;
+        width: 100px;
+        height: 100px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      Parent
+      <div class="child1">Child 1</div>
+      <div class="child2">Child 2</div>
+    </div>
+    <div class="sibling">Sibling</div>
+  </body>
+</html>
