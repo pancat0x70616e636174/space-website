@@ -259,7 +259,7 @@ body {
 }
 
 .primary-navigation {
-    /* --gap: 8rem; */
+    --gap: 8rem;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -270,5 +270,11 @@ body {
 }
 
 .primary-navigation a > span {
-    text-decoration: underline ;
+    font-weight: 700;
+    margin-right: 0.5em;
+}
+
+.underline-indicators > * {
+    padding: var(--underline-gap, 1rem) 0;
+    border-bottom: 0.2em solid hsl(var(--color-light));
 }
