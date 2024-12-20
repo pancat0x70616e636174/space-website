@@ -244,10 +244,10 @@ body {
     content: '';
     position: absolute;
     z-index: -1;
-    background: hsl(var(--color-white) / 0.15);
     width: 100%;
     height: 100%;
-    border-radius: inherit;
+    background: hsl(var(--color-white) / 0.1);
+    border-radius: 50%;
     opacity: 0;
     transition: opacity 500ms linear, transform 750ms ease-in-out;
 }
@@ -258,8 +258,8 @@ body {
     transform: scale(1.5);
 }
 
-.primary-navigation {
-    /* --gap: 8rem; */
+.primary-navigation {/*  */
+    --gap: 8rem;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -269,6 +269,11 @@ body {
     text-decoration: none;
 }
 
-.primary-navigation a > span {
-    text-decoration: underline ;
+.primary-navigation a > span { 
+    font-weight: 700;
+    margin-right: .5em;
+}
+
+.underline-indicators > * {
+    
 }
